@@ -92,53 +92,44 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Imagination Policy: Using Generative Point
-            Cloud Models for Learning Manipulation Policies </h1>
+          <h1 class="title is-1 publication-title">Match Policy: A Simple Pipeline from Point Cloud Registration to Manipulation Policies </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://haojhuang.github.io/">Haojie Huang</a><sup>1</sup>,</span>
+            
+              <span class="author-block">
+                <a href="https://andyliu7081.github.io/">Haotian Liu</a><sup>2</sup>,
+              </span>
+
+              <span class="author-block">
+                <a href="https://pointw.github.io/">Dian Wang</a><sup>1</sup>,
+              </span>
+
+
             <span class="author-block">
-              <a href="https://sites.google.com/view/karlschmeckpeper">Karl Schmeckpeper</a><sup>$\dagger$2</sup>,</span>
-            <span class="author-block">
-              <a href="https://pointw.github.io/">Dian Wang</a><sup>$\dagger$1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://ondrejbiza.com/#">Ondrej Biza</a><sup>$\dagger$12</sup>,
+              <a href="https://www.robinwalters.com/">Robin Walters</a><sup>$\ast$1</sup>
             </span>
 
             <span class="author-block">
-              <a href="https://h-freax.github.io/">Yaoyao Qian</a><sup>$\ddagger$1</sup>,</span>
-            <span class="author-block">
-              <a href="https://andyliu7081.github.io/">Haotian Liu</a><sup>$\ddagger$3</sup>,
+              <a href="https://helpinghandslab.netlify.app/people/">Robert Platt</a><sup>$\ast$1</sup>,
             </span>
-            <span class="author-block">
-              <a href="https://saulbatman.github.io/">Mingxi Jia</a><sup>$\ddagger$4</sup>,
-            </span>
-
-            <span class="author-block">
-              <a href="https://helpinghandslab.netlify.app/people/">Robert Platt</a><sup>12</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.robinwalters.com/">Robin Walters</a><sup>1</sup>
-            </span>
+           
           </div>
 
           <div class="is-size-5 publication-authors">
-            <div class="author-block"><sup>1</sup>Northeastern Univeristy, Boston, MA 02115</div>
+            <div class="author-block"><sup>1</sup>Northeastern Univeristy, Boston, MA 02115; </div>
             
-            <div>
-            <span class="author-block"><sup>2</sup>Boston Dynamics AI Institute, </span>
-            <span class="author-block"><sup>3</sup>Worcester Polytechnic Institute, </span>
-            <span class="author-block"><sup>4</sup>Brown Univeristy </span>
-            </div>
-
-            <div>
-            <span class="author-block"><sup>$\dagger$, $\ddagger$</sup>equal conrtibution </span>
+            
+            
+            <span class="author-block"><sup>2</sup>Worcester Polytechnic Institute; </span>
+            
+            
+            <span class="author-block"><sup>$\ast$</sup>equally advising</span>
             
             <!-- <span class="author-block"><sup>$\star$</sup>equally advising</span> -->
-            </div>
+            
 
-            <div> <b>CoRL 2024</b><div>
+            <!-- <div> <b>CoRL 2024</b><div> -->
           </div>
 
           <div class="column has-text-centered">
@@ -164,7 +155,7 @@
               </span>
               
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=EpYUDb8bUP4"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -172,7 +163,7 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
                 <a href=""
@@ -203,49 +194,18 @@
 
 
 
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/imagine_mug_tree.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/imagine_flower.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/imagine_pour.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mugTree1_cut.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/flower1_cut.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/pour1_cut.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <center>
+      <video id="teaser" autoplay controls muted loop playsinline width="95%" height="95%">
+        <source src="./static/videos/match_policy_compressed.mp4"
+                type="video/mp4">
+      </video>
+    </center>
+      <h3 class="subtitle has-text-centered">
+        Introduction to Match Policy: A simple imitation pipeline without training.
+      </h3>
     </div>
   </div>
 </section>
@@ -259,12 +219,14 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Humans can imagine goal states during planning and perform actions to match those goals.
-            In this work, we propose $\text{Imagination Policy}$, a novel multi-task key-frame policy network for solving high-precision pick and place tasks.
-            Instead of learning actions directly, $\text{Imagination Policy}$ generates point clouds to imagine desired states which are then translated to actions 
-            using rigid action estimation. This transforms action inference into a local generative task. We leverage pick and place symmetries underlying the tasks in the generation process
-            and achieve extremely high sample efficiency and generalizability to unseen configurations.
-            Finally, we demonstrate state-of-the-art performance across various tasks on the RLbench benchmark compared with several strong baselines.
+            Many manipulation tasks require the robot to rearrange objects relative to one another. 
+            Such tasks can be described as a sequence of relative poses between parts of a set of rigid bodies. 
+            In this work, we propose $\mathrm{Match Policy}$, a simple but novel pipeline for solving high-precision pick and place tasks. 
+            Instead of predicting actions directly, our method registers the pick and place targets to the stored demonstrations. 
+            This transfers action inference into a point cloud registration task and enables us to realize nontrivial manipulation policies without any training. 
+            $\mathrm{Match Policy}$ is designed to solve high-precision tasks with a key-frame setting. 
+            By leveraging the geometric interaction and the symmetries of the task, it achieves extremely high sample efficiency and generalizability to unseen configurations. 
+            We demonstrate its state-of-the-art performance across various tasks on RLbench benchmark compared with several strong baselines and test it on a real robot with six tasks.
           </p>
         </div>
       </div>
@@ -294,14 +256,13 @@
         <div class="content has-text-justified">
           <p>
             
-            <b>Imagination and Rigid Action: </b> 
-            Humans can look at a scene and imagine how it would look with the objects in it rearranged.
-            However, most robotic policy learning algorithms directly map observations to actions, which limits transferability
-            between tasks and different robots.
-
-            Inspired by how humans solve tasks, we propose $\text{Imagination Policy}$ which generates a new point cloud combining the inputs into a desirable configuration
-            using a conditional point flow model. Compared to directly generating actions, this adds many degrees of freedom
-            to the generative process which aids optimization and sensitivity to geometric interactions.
+            <b>A Simple Pipeline without Training. </b> 
+            To provide a convenient tool for robotic pick-place policies that require minimal effort to deploy across different tasks,
+            we propose $\mathrm{Match Policy}$, a simple pipeline that transfers manipulation policy learning into point cloud registration (PCR).
+            $\mathrm{Match Policy}$ constructs a combined point cloud of the desired scene using segmented point clouds, where objects are arranged in the expected configuration. 
+            As illustrated in Figure 1, we store a collection of combined point clouds from the demonstration data. 
+            During inference, the point clouds of the pick and place objects are registered to these stored point clouds, and the resulting registration poses are used to compute the action.
+            Unlike the prior works that require heavy training, we realize this pipeline with optimization-based method: $\mathrm{Match POlicy}$ takes use of the RANSAC and ICP and produces the pick-place policy immediately after the demonstration collection. 
           </p>
           <img src="./static/images/intro.png"></img>
           <p>
@@ -369,10 +330,10 @@ $f_{\text{gen}} \colon (P_a, P_B, \ell) \rightarrow (\hat{P}_{a},\hat{P}_b)$, wh
   </div>
 </section>
 
-
+<!-- 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
+
     <div class="columns is-centered has-text-centered">
       <div class="column">
         <h2 class="title is-3">Results</h2>
@@ -389,39 +350,68 @@ $f_{\text{gen}} \colon (P_a, P_B, \ell) \rightarrow (\hat{P}_{a},\hat{P}_b)$, wh
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <center>
-      <video id="teaser" autoplay controls muted loop playsinline width="85%" height="85%">
-        <source src="./static/videos/imagination-policy-real-robot-revise-1080p_compressed.mp4"
-                type="video/mp4">
-      </video>
-    </center>
-      <h3 class="subtitle has-text-centered">
-        video of real robot experiments (trained with 10 demos)
-      </h3>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/packing-shoes.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/hanging-mug.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/arranging-letters.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/pluging-flower.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/putting-banana.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/pouring_ball.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h3 class="title">Citation</h3>
     <pre><code>
-      @article{
-        huang2024imagination,
-        title={Imagination Policy: Using Generative Point Cloud Models for Learning Manipulation Policies},
-        author={Haojie Huang and Karl Schmeckpeper and Dian Wang and Ondrej Biza and Yaoyao Qian and Haotian Liu and Mingxi Jia and Robert Platt and Robin Walters},
-        journal={arXiv preprint arXiv:2406.11740},
-        year={2024},}
+     
+
+
     </code></pre>
   </div>
-</section>
+</section> -->
 
 
 
