@@ -110,11 +110,11 @@
 
 
             <span class="author-block">
-              <a href="https://www.robinwalters.com/">Robin Walters</a><sup>$\ast$1</sup>
+              <a href="https://www.robinwalters.com/">Robin Walters</a><sup>$\ast$1</sup>,
             </span>
 
             <span class="author-block">
-              <a href="https://helpinghandslab.netlify.app/people/">Robert Platt</a><sup>$\ast$1</sup>,
+              <a href="https://helpinghandslab.netlify.app/people/">Robert Platt</a><sup>$\ast$1</sup>
             </span>
            
           </div>
@@ -294,11 +294,11 @@
             $\text{Match Policy}$ takes the segmented point clouds as input and outputs the key-frame actions $(\text{pick}, \text{pre-place}, \text{place})$.
             It have three steps: 
             <ol>
-              <li>Storing Combined Point Clouds ${P_{ab}}$. We first construct the combined point cloud $P_{ab}$ from the demonstration data.  $P_{ab}$ represents either the desired pick configuration or the desired preplace/place configuration, as shown in Fig 1. </li>
-              <li>Registering $\hat{P}_a$ and $\hat{P}_a$ to $P_{ab}$. We denote $\hat{P}_a$ and  $\hat{P}_b$ as the observed point clouds during inference, to distinguish them from the demonstrated point clouds.
+              <li><b>Storing Combined Point Clouds ${P_{ab}}$.</b> We first construct the combined point cloud $P_{ab}$ from the demonstration data.  $P_{ab}$ represents either the desired pick configuration or the desired preplace/place configuration, as shown in Fig 1. </li>
+              <li><b>Registering $\hat{P}_a$ and $\hat{P}_a$ to $P_{ab}$.</b> We denote $\hat{P}_a$ and  $\hat{P}_b$ as the observed point clouds during inference, to distinguish them from the demonstrated point clouds.
                 Our registration model $f_{r}\colon (\hat{P}_a, \hat{P}_b, P_{ab}) \mapsto (\hat{T}_a, \hat{T}_b)$ outputs the poses that match $\hat{P}_a$ and $\hat{P}_b$ to the combined point cloud $P_{ab}$.
               </li>
-              <li>Calculating $(\text{pick}, \text{pre-place}, \text{place})$. We calculate the pick action as the relative pose to arrange the gripper to the current pick target. The preplace and place action are determined by moving the pick target while keeping the placement stationary, to match desired configuration.</li>
+              <li><b>Calculating $(\text{pick}, \text{pre-place}, \text{place})$.</b> We calculate the pick action as the relative pose to arrange the gripper to the current pick target. The preplace and place action are determined by moving the pick target while keeping the placement stationary, to match desired configuration.</li>
             </ol>
           </p>
 
